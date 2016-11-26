@@ -1,4 +1,6 @@
 "*":
+  autosave:
+    enabled: true
   core:
     disabledPackages: [
       "background-tips"
@@ -15,14 +17,17 @@
       "tmp"
       "vendor"
     ]
+    telemetryConsent: "limited"
     themes: [
       "unity-ui"
       "glacier-syntax"
     ]
   editor:
+    backUpBeforeSaving: true
     fontFamily: "Menlo"
     fontSize: 15
     invisibles: {}
+    preferredLineLength: 132
     showIndentGuide: true
     softWrapAtPreferredLineLength: true
   "go-plus":
@@ -38,5 +43,16 @@
       "text.git-commit"
       "text.html.basic"
     ]
+  "vim-mode-plus":
+    clearHighlightSearchOnResetNormalMode: true
+    clearPersistentSelectionOnResetNormalMode: true
+    highlightSearch: true
+    incrementalSearch: true
+    incrementalSearchVisitDirection: "relative"
+    stayOnTransformString: true
+    stayOnYank: true
+    useClipboardAsDefaultRegister: true
+    useSmartcaseForSearch: true
+    useSmartcaseForSearchCurrentWord: true
   welcome:
     showOnStartup: false
